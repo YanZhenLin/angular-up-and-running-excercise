@@ -1,0 +1,9 @@
+<div [class] = "cart.product.onSale ? 'hot': 'cold'" >
+	<div><img src="assets/images/rubber_ducky.jpg"></div>
+	<div class="name"> {{ cart.product.name + ' '+ cart.product.price}}</div>
+	<div class="inline-display"> 
+		<button (click)="subtractItemFromCart()" [disabled]="cart.isCartEmpty()"> - </button>
+		<h4> {{ cart.itemCount }} </h4>
+		<button (click)="addItemToCart()"> + </button>
+	</div>
+</div>

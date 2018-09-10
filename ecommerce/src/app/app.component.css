@@ -1,0 +1,13 @@
+.hot{
+	border: 1px solid red;
+	border-radius: 5px;	
+}
+
+.cold{
+	border: 1px solid blue;
+	border-radius: 5px;
+}
+
+.inline-display{
+	display: inline-block;
+}
